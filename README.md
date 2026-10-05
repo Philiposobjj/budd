@@ -1,56 +1,158 @@
-# Welcome to your Expo app 👋
+# Budd 🍸
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+**Budd** é um aplicativo mobile desenvolvido para conectar pessoas a bares, restaurantes, casas noturnas e eventos em um único lugar.
 
-## Get started
+A proposta é permitir que o usuário descubra estabelecimentos, consulte informações, faça reservas, compre produtos e ingressos, acompanhe pedidos e interaja com uma comunidade dentro do aplicativo.
 
-1. Install dependencies
+## 🚀 Funcionalidades
 
-   ```bash
-   npm install
-   ```
+* 🔐 Cadastro e login de usuários
+* 👤 Perfil do usuário
+* 📍 Descoberta de estabelecimentos
+* 🔎 Busca e exploração de locais
+* 🗺️ Mapa de estabelecimentos
+* 🍽️ Cardápio de comidas e bebidas
+* 🛒 Carrinho de compras
+* 💳 Fluxo de checkout
+* 📦 Histórico de pedidos
+* 📅 Reservas em estabelecimentos
+* 🎫 Eventos e compra de ingressos
+* 📋 Histórico de reservas e eventos
+* 📸 Publicações da comunidade
+* 💬 Área de conversas
+* 🤖 Assistente Budd
+* 🔒 Autenticação e gerenciamento de sessão
 
-2. Start the app
+## 🛠️ Tecnologias
 
-   ```bash
-   npx expo start
-   ```
+* React Native
+* Expo
+* Expo Router
+* TypeScript
+* React
+* Supabase
+* Supabase Auth
+* Supabase Database
+* Supabase Storage
+* Git
+* GitHub
 
-In the output, you'll find options to open the app in a
+## 📱 Estrutura do aplicativo
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+O projeto utiliza **Expo Router** para organização das telas e navegação.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```text
+budd/
+├── src/
+│   ├── app/
+│   │   ├── index.tsx
+│   │   ├── explore.tsx
+│   │   ├── create.tsx
+│   │   ├── place.tsx
+│   │   ├── cart.tsx
+│   │   ├── checkout.tsx
+│   │   ├── orders.tsx
+│   │   ├── reservations.tsx
+│   │   ├── events.tsx
+│   │   ├── profile.tsx
+│   │   └── ...
+│   │
+│   ├── components/
+│   ├── context/
+│   └── lib/
+│
+├── assets/
+├── package.json
+├── app.json
+├── tsconfig.json
+└── README.md
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## ⚙️ Como executar o projeto
 
-### Other setup steps
+### 1. Clonar o repositório
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
+```bash
+git clone https://github.com/Philiposobjj/budd.git
+```
 
-## Learn more
+### 2. Entrar na pasta
 
-To learn more about developing your project with Expo, look at the following resources:
+```bash
+cd budd
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+### 3. Instalar as dependências
 
-## Join the community
+```bash
+npm install
+```
 
-Join our community of developers creating universal apps.
+### 4. Configurar as variáveis de ambiente
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Crie um arquivo `.env` na raiz do projeto:
+
+```env
+EXPO_PUBLIC_SUPABASE_URL=sua_url_do_supabase
+EXPO_PUBLIC_SUPABASE_KEY=sua_chave_do_supabase
+```
+
+> O arquivo `.env` não é versionado no GitHub.
+
+### 5. Iniciar o Expo
+
+```bash
+npx expo start
+```
+
+Depois, o aplicativo pode ser executado utilizando o **Expo Go** ou um ambiente de desenvolvimento compatível.
+
+## 🔐 Segurança
+
+Informações sensíveis e credenciais do Supabase não são armazenadas diretamente no código-fonte.
+
+As variáveis de ambiente são mantidas no arquivo `.env`, que está incluído no `.gitignore`.
+
+## 🎨 Interface
+
+O Budd utiliza uma identidade visual baseada em:
+
+* Fundo escuro
+* Verde-limão como cor de destaque
+* Interface simples e moderna
+* Navegação focada na experiência mobile
+
+## 🎯 Objetivo do projeto
+
+O Budd foi desenvolvido como um projeto prático de desenvolvimento mobile, reunindo diferentes conceitos de desenvolvimento de software em uma única aplicação.
+
+Entre os principais conceitos utilizados estão:
+
+* Desenvolvimento mobile
+* Componentização
+* Navegação entre telas
+* Gerenciamento de estado
+* Autenticação
+* Banco de dados
+* Storage de imagens
+* Integração com serviços externos
+* CRUD
+* Carrinho e pedidos
+* Reservas
+* Upload de arquivos
+* Controle de sessão
+* Git e GitHub
+
+## 👨‍💻 Desenvolvedor
+
+**Philip Alves Carmichael**
+
+Desenvolvedor em formação com formação em **Turismo** e **Técnico em Desenvolvimento de Sistemas**, com interesse em desenvolvimento de software, suporte técnico e tecnologia.
+
+### Tecnologias e conhecimentos
+
+`JavaScript` · `TypeScript` · `React` · `React Native` · `Node.js` · `Express` · `MySQL` · `Prisma` · `Docker` · `Supabase` · `Git` · `GitHub`
+
+---
+
+⭐ Projeto desenvolvido por **Philip Alves Carmichael**.
